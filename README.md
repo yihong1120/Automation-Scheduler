@@ -6,6 +6,11 @@ This repository contains a Bash script that automates the execution of a Python 
 
 To run the script in this repository, you will need a Unix based system with Bash and Python installed. You should also have a Python script that you want to automate the execution of.
 
+## Requirements
+
+Python 3
+pyautogui library
+
 ## Scripts
 
 * 'automation.sh': This script is used to automate the execution of a Python script.
@@ -14,18 +19,22 @@ To run the script in this repository, you will need a Unix based system with Bas
 
 To run the automation script, you can simply execute the command below in your terminal:
 
-    ./automation.sh
+    ./bash automation.sh
 
 It will run the 'automatisation.py' script at 9 AM and 6 PM every day except Saturdays and Sundays.
 
 You may want to adjust the script according to the time you want to automate the process to run the Python script, the time in the example here is used as a reference.
 Also, you need to have the automatisation.py script ready and in the same directory as the automation script.
 
-## Results
+## Configuration
 
-The result of the quantization will be stored in the specified xmodel output folder, along with the log file of the quantization process, it will show the statistics of the quantization such as precision, scale factor and etc.
+The shell script is set to run the Python script at 9am and 6pm on weekdays only. You can modify the times by editing the hours variable in the automatisation.sh file.
 
-Please note that the script is only for demonstration purpose, you may need to tweak the script for your specific use case.
+The Python script contains the specific set of actions that will be performed on the screen. You can modify this code to automate different actions.
+
+## Conclusion
+
+This script provides an easy way to automate a specific set of actions on the screen at specific times on weekdays only. The use of pyautogui and shell scripting makes it easy to automate these actions without needing to manually perform them each time.
 
 ## License
 
