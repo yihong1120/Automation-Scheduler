@@ -25,7 +25,7 @@ do
         then
             if [ $minutes -ge 0 ] && [ $minutes -lt 21 ]
             then
-                python automatisation.py
+                python automation.py
                 #imprimer le temps maintenant
                 now="$(date +'%Y-%m-%d ')"
                 heure="h"
