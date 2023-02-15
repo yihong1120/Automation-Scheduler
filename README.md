@@ -30,7 +30,3 @@ Please note that the script is only for demonstration purpose, you may need to t
 ## License
 
 This project is licensed under the Apache 2.0 License
-
-## Acknowledgements
-
-Thank you to the Vitis-AI and TensorFlow teams for creating such powerful tools.
