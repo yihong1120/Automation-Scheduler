@@ -16,9 +16,9 @@
 while true
 do
     #intervalle de temps
-    weeks=`date +%A`
-    hours=`date +%H`
-    minutes=`date +%M`
+    weeks=$(date +%A)
+    hours=$(date +%H)
+    minutes=$(date +%M)
     if [ $weeks != "Saturday" ] || [ $weeks != "Sunday" ]
     then
         if [ $hours -eq 9 ] || [ $hours -eq 18 ]
